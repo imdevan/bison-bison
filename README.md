@@ -1,4 +1,9 @@
-# imdevan.github.io
+# Basic Jekyl Boilerplate
 
-"Personal website if super awesome front end developer unicorn person, Devannnnn Huapaya!"
+Some boiler plate stuff for jekyll.
+
+## Installation instructions
+
+
+### Don't Use For Evil 💖
 
