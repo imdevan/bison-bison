@@ -27,6 +27,3 @@ npm install
 ```
 npm start
 ```
-
-### Don't Use For Evil 
-💖
