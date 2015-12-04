@@ -2,8 +2,14 @@
   text-align: center;
   padding: 5rem;
 
-  &--title {
+  @media (max-width: 750px) {
+    padding: 1rem;
+  }
 
+  @media (max-width: 500px) {
+    padding: 2%;
+  }
+  &--title {
     color: rgba(#444, 0.5);
     font-weight: bold;
     font-size: 20rem;
@@ -12,15 +18,28 @@
     display: table;
     margin: auto;
 
-   color: white;  /* Fallback: assume this color ON TOP of image */
+    color: white;  /* Fallback: assume this color ON TOP of image */
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/1280px-American_bison_k5680-1.jpg);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-size: cover;
 
     p {
       line-height: 1;
       padding: 0;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 15rem;
+    }
+
+    @media (max-width: 750px) {
+      font-size: 10rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 5rem;
+      margin-top: 3rem;
     }
   }
 
@@ -28,17 +47,26 @@
     opacity: 0.5;
     margin: 10rem auto;
     width: 50%;
+
+    @media (max-width: 500px) {
+      opacity: 1;
+    }
   }
 }
 
 .background {
-   background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Americanbison.jpg/1280px-Americanbison.jpg) no-repeat center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  opacity: 0.5;
-  z-index: -1;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Americanbison.jpg/1280px-Americanbison.jpg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+
+    @media (max-width: 500px) {
+      background: #333;
+      opacity: 1;
+    }
 }
 
 body {
